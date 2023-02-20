@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
 import Link from "next/link";
 
 function classNames(...classes: any) {
@@ -18,11 +16,13 @@ export default function Navbar() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
               <Link href="/">
-                <img
-                  className="block h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt="Strata"
-                />
+                <picture>
+                  <img
+                    className="block h-8 w-auto"
+                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    alt="Strata"
+                  />
+                </picture>
               </Link>
             </div>
             <div className="ml-4 sm:ml-6 sm:flex sm:space-x-8">

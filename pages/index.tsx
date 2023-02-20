@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Home() {
 
@@ -41,14 +42,14 @@ export default function Home() {
             <p className="text-left mt-6 text-lg leading-8 text-gray-600">For additional details, please visit the README on github.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              <Link
                 href="https://github.com/jasperdegens/strata-frontend-exercise"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-md bg-indigo-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 View README
-              </a>
+              </Link>
             </div>
           </div>
         </div>
