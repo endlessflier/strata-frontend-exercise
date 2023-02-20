@@ -16,13 +16,12 @@ export default function Navbar() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
               <Link href="/">
-                <picture>
-                  <img
-                    className="block h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt="Strata"
-                  />
-                </picture>
+                {/*  eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  className="block h-8 w-auto"
+                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  alt="Strata"
+                />
               </Link>
             </div>
             <div className="ml-4 sm:ml-6 sm:flex sm:space-x-8">
