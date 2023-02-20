@@ -2,6 +2,7 @@ interface UserDetails {
   username: string;
   profileImage: string;
   score: number;
+  liked?: boolean;
 }
 
 type LeaderboardData = {
